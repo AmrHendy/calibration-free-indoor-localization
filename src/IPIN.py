@@ -5,9 +5,7 @@ Created on Sat Aug  1 04:44:55 2018
 @author: Amr Hendy
 """
 
-
 import pandas as pd
-
 #reading datafile
 df = pd.read_csv('..\WiFi-SLAM\E-house\wifiscanlog - 2016-02-09.csv', sep=',')
 df.head()
@@ -22,7 +20,6 @@ print('number of APs = ' + str(number_of_APs))
 #first 3*number_of scans represent scan position x,y,z
 #then 3*number_of APs represent APs x,y,z
 initial_guess = []
-
 #initial values x,y,z for scans positions
 scan_dic = {}
 unique_scans_df = df.drop_duplicates('scanId')
@@ -39,14 +36,28 @@ for i in range(len(scanIds)):
 
 #initial values x,y,z for APs positions
 APs_dic = {}
-unique_APs_df = df.drop_duplicates('ssid')
-ssid = list(unique_APs_df['ssid'])
-X_APs = list(unique_APs_df['gpslatitude'])
-Y_APs = list(unique_APs_df['gpslongitude'])
-Z_APs = list(unique_APs_df['slamFloor'])
-X_APs_true = list(unique_APs_df['wifilatitude/bluetoothlatitude'])
-Y_APs_true = list(unique_APs_df['wifilongitude/bluetoothlongitude'])
-Z_APs_true = Z_APs
+ssid = list(set([x for x, nan_value in zip(df['ssid'], pd.isnull(df['ssid'])) if not nan_value]));
+X_APs = []
+Y_APs = []
+Z_APs = []
+X_APs_true = []
+Y_APs_true = []
+Z_APs_true = []
+for name in ssid:
+    max_value = 0
+    val = []
+    cnt = 0
+    for r,lat,lon,f,true_lat,true_lon in zip(df[df['ssid'] == name]['rssi'], df[df['ssid'] == name]['gpslatitude'], df[df['ssid'] == name]['gpslongitude'], df[df['ssid'] == name]['slamFloor'], df[df['ssid'] == name]['wifilatitude/bluetoothlatitude'], df[df['ssid'] == name]['wifilongitude/bluetoothlongitude']):
+        cnt+=1
+        if abs(max_value) < abs(r):
+            val = [lat, lon, f, true_lat, true_lon, f]
+    X_APs.append(val[0])
+    Y_APs.append(val[1])
+    Z_APs.append(val[2])
+    X_APs_true.append(val[3])
+    Y_APs_true.append(val[4])
+    Z_APs_true.append(val[5])
+    
 for i in range(len(ssid)):
     APs_dic[ssid[i]] = len(initial_guess)
     initial_guess.append(X_APs[i])
@@ -55,6 +66,7 @@ for i in range(len(ssid)):
 
 
 import math
+import numpy as np
 
 #paramters
 ci = -37
@@ -68,6 +80,8 @@ def getFpow(x):
         ssid_of_scan = list(df[df['scanId'] == scan]['ssid'])
         rss_of_scan = list(df[df['scanId'] == scan]['rssi'])
         for ssid_name,rss in zip(ssid_of_scan,rss_of_scan):
+            if type(ssid_name) == float and np.isnan(ssid_name):
+                continue
             dij = math.pow(x[scan_dic[scan]] - x[APs_dic[ssid_name]] , 2) + math.pow(x[scan_dic[scan] + 1] - x[APs_dic[ssid_name] + 1] , 2) + math.pow(x[scan_dic[scan] + 2] - x[APs_dic[ssid_name] + 2] , 2)
             nij = abs(x[scan_dic[scan] + 2] - x[APs_dic[ssid_name] + 2])
             #add epsilon if dij = 0 to resolve log(0) error

@@ -1,0 +1,107 @@
+number of scans = 894
+number of APs = 53
+Still Minimizing 42536226.229848705
+error in APs positions = 77.35264228351328
+error in scans positions = 0.0
+Still Minimizing 42536226.229848705
+error in APs positions = 77.35264228351328
+error in scans positions = 0.0
+Still Minimizing 42536226.22984871
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22984871
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22960909
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22984871
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22984871
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22962359
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22984871
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22984871
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.229672074
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22984871
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22984871
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22974309
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536225.882431164
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536225.79579993
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.229654305
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536225.85209173
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536225.92895266
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22960993
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536225.91010957
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536225.99736537
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22961852
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.0463965
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.10478726
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22963102
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22984871
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22984871
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22971187
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22984871
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22984871
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22961695
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.22034397
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.28228301
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16
+Still Minimizing 42536226.2295164
+error in APs positions = 77.35264228351328
+error in scans positions = 2.220446049250313e-16

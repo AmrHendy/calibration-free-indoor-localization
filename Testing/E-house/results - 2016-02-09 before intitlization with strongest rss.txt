@@ -1,3 +1,5 @@
+number of scans = 894
+number of APs = 53
 Still Minimizing 163483009.547428
 error in APs positions = 77.35002361276767
 error in scans positions = 2.220446049250313e-16
